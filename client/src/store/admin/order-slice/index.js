@@ -10,7 +10,7 @@ export const getAllOrdersForAdmin = createAsyncThunk(
   "/order/getAllOrdersForAdmin",
   async () => {
     const response = await axios.get(
-      `full-mern-ecommerce-main-q2pm8n7h3-ibrahims-projects-eba2d718.vercel.app/api/admin/orders/get`
+      `https://full-mern-ecommerce-main.onrender.com/api/admin/orders/get`
     );
 
     return response.data;
@@ -21,7 +21,7 @@ export const getOrderDetailsForAdmin = createAsyncThunk(
   "/order/getOrderDetailsForAdmin",
   async (id) => {
     const response = await axios.get(
-      `full-mern-ecommerce-main-q2pm8n7h3-ibrahims-projects-eba2d718.vercel.app/api/admin/orders/details/${id}`
+      `https://full-mern-ecommerce-main.onrender.com/api/admin/orders/details/${id}`
     );
 
     return response.data;
@@ -32,7 +32,7 @@ export const updateOrderStatus = createAsyncThunk(
   "/order/updateOrderStatus",
   async ({ id, orderStatus }) => {
     const response = await axios.put(
-      `full-mern-ecommerce-main-q2pm8n7h3-ibrahims-projects-eba2d718.vercel.app/api/admin/orders/update/${id}`,
+      `https://full-mern-ecommerce-main.onrender.com/api/admin/orders/update/${id}`,
       {
         orderStatus,
       }
