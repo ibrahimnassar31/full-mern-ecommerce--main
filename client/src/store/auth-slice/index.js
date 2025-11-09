@@ -12,7 +12,7 @@ export const registerUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "https://full-mern-ecommerce.onrender.com/api/auth/register",
+      "https://full-mern-ecommerce-main.onrender.com/api/auth/register",
       formData,
       {
         withCredentials: true,
@@ -28,7 +28,7 @@ export const loginUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "https://full-mern-ecommerce.onrender.com/api/auth/login",
+      "https://full-mern-ecommerce-main.onrender.com/api/auth/login",
       formData,
       {
         withCredentials: true,
@@ -44,7 +44,7 @@ export const logoutUser = createAsyncThunk(
 
   async () => {
     const response = await axios.post(
-      "https://full-mern-ecommerce.onrender.com/api/auth/logout",
+      "https://full-mern-ecommerce-main.onrender.com/api/auth/logout",
       {},
       {
         withCredentials: true,
@@ -60,7 +60,7 @@ export const checkAuth = createAsyncThunk(
 
   async () => {
     const response = await axios.get(
-      "https://full-mern-ecommerce.onrender.com/api/auth/check-auth",
+      "https://full-mern-ecommerce-main.onrender.com/api/auth/check-auth",
       {
         withCredentials: true,
         headers: {
