@@ -10,7 +10,7 @@ export const addNewAddress = createAsyncThunk(
   "/addresses/addNewAddress",
   async (formData) => {
     const response = await axios.post(
-      "https://full-mern-ecommerce-main.onrender.com/api/shop/address/add",
+      "full-mern-ecommerce-main-q2pm8n7h3-ibrahims-projects-eba2d718.vercel.app/api/shop/address/add",
       formData
     );
 
@@ -22,7 +22,7 @@ export const fetchAllAddresses = createAsyncThunk(
   "/addresses/fetchAllAddresses",
   async (userId) => {
     const response = await axios.get(
-      `https://full-mern-ecommerce-main.onrender.com/api/shop/address/get/${userId}`
+      `full-mern-ecommerce-main-q2pm8n7h3-ibrahims-projects-eba2d718.vercel.app/api/shop/address/get/${userId}`
     );
 
     return response.data;
@@ -33,7 +33,7 @@ export const editAddress = createAsyncThunk(
   "/addresses/editAddress",
   async ({ userId, addressId, formData }) => {
     const response = await axios.put(
-      `https://full-mern-ecommerce-main.onrender.com/api/shop/address/update/${userId}/${addressId}`,
+      `full-mern-ecommerce-main-q2pm8n7h3-ibrahims-projects-eba2d718.vercel.app/api/shop/address/update/${userId}/${addressId}`,
       formData
     );
 
@@ -45,7 +45,7 @@ export const deleteAddress = createAsyncThunk(
   "/addresses/deleteAddress",
   async ({ userId, addressId }) => {
     const response = await axios.delete(
-      `https://full-mern-ecommerce-main.onrender.com/api/shop/address/delete/${userId}/${addressId}`
+      `full-mern-ecommerce-main-q2pm8n7h3-ibrahims-projects-eba2d718.vercel.app/api/shop/address/delete/${userId}/${addressId}`
     );
 
     return response.data;

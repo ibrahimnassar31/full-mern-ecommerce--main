@@ -12,7 +12,7 @@ export const registerUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "https://full-mern-ecommerce-main.onrender.com/api/auth/register",
+      "full-mern-ecommerce-main-q2pm8n7h3-ibrahims-projects-eba2d718.vercel.app/api/auth/register",
       formData,
       {
         withCredentials: true,
@@ -28,7 +28,7 @@ export const loginUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "https://full-mern-ecommerce-main.onrender.com/api/auth/login",
+      "full-mern-ecommerce-main-q2pm8n7h3-ibrahims-projects-eba2d718.vercel.app/api/auth/login",
       formData,
       {
         withCredentials: true,
@@ -44,7 +44,7 @@ export const logoutUser = createAsyncThunk(
 
   async () => {
     const response = await axios.post(
-      "https://full-mern-ecommerce-main.onrender.com/api/auth/logout",
+      "full-mern-ecommerce-main-q2pm8n7h3-ibrahims-projects-eba2d718.vercel.app/api/auth/logout",
       {},
       {
         withCredentials: true,
@@ -60,7 +60,7 @@ export const checkAuth = createAsyncThunk(
 
   async () => {
     const response = await axios.get(
-      "https://full-mern-ecommerce-main.onrender.com/api/auth/check-auth",
+      "full-mern-ecommerce-main-q2pm8n7h3-ibrahims-projects-eba2d718.vercel.app/api/auth/check-auth",
       {
         withCredentials: true,
         headers: {
