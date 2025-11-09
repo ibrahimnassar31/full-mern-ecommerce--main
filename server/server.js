@@ -28,7 +28,7 @@ const PORT = process.env.PORT || 5001;
 
 app.use(
   cors({
-    origin: "https://full-mern-ecommerce-main.onrender.com",
+    origin: "full-mern-ecommerce-main-doz5hhsml-ibrahims-projects-eba2d718.vercel.app",
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: [
       "Content-Type",
